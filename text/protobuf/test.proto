@@ -1,0 +1,57 @@
+syntax = "proto3";//设置protobuf版本
+ 
+//声明代码所在包，相当于C++的namespace，在引入由这份文件生成的.cc文件和.h文件时，
+//需要using namespace fixbug
+package fixbug;
+
+//表示生成service服务类
+option cc_generic_services = true;
+
+message ResultCode
+{
+    int32 errcode=1;
+    bytes errmsg=2;
+} 
+
+//定义登录请求
+message LoginRequest
+{
+    bytes name = 1;//表示第1字段
+    bytes pwd = 2;//表示第2字段
+}
+ 
+//定义响应登录请求
+message LoginResponse
+{
+    ResultCode result=1;
+    bool success=3;
+}
+
+message GetFriendListsRequest
+{
+    uint32 userid=1;
+}
+
+message User
+{
+    bytes name = 1;
+    uint32 age=2;
+    enum Sex{
+        MAN=0;
+        WOMAN=1;
+    }
+    Sex sex=3;
+}
+
+message GetFriendListsResponse
+{
+    ResultCode result=1;
+    repeated User friend_list =2; //定义了一个列表类型
+}
+
+// 定义RPC服务接口类和服务方法
+service UserServiceRpc
+{
+    rpc Login(LoginRequest) returns (LoginResponse);
+    rpc GetFriendLists(GetFriendListsRequest) returns (GetFriendListsResponse);
+}

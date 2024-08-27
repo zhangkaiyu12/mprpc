@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/roes/桌面/mprpc/build/src",
+  "command": "/usr/bin/c++    -I/home/roes/桌面/mprpc/src/include -I/home/roes/桌面/mprpc/example  -g   -std=gnu++11 -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/roes/桌面/mprpc/src/rpcprovider.cc",
+  "file": "/home/roes/桌面/mprpc/src/rpcprovider.cc"
+},
+{
+  "directory": "/home/roes/桌面/mprpc/build/src",
+  "command": "/usr/bin/c++    -I/home/roes/桌面/mprpc/src/include -I/home/roes/桌面/mprpc/example  -g   -std=gnu++11 -o CMakeFiles/mprpc.dir/mprpccontraller.cc.o -c /home/roes/桌面/mprpc/src/mprpccontraller.cc",
+  "file": "/home/roes/桌面/mprpc/src/mprpccontraller.cc"
+},
+{
+  "directory": "/home/roes/桌面/mprpc/build/src",
+  "command": "/usr/bin/c++    -I/home/roes/桌面/mprpc/src/include -I/home/roes/桌面/mprpc/example  -g   -std=gnu++11 -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/roes/桌面/mprpc/src/mprpcconfig.cc",
+  "file": "/home/roes/桌面/mprpc/src/mprpcconfig.cc"
+},
+{
+  "directory": "/home/roes/桌面/mprpc/build/src",
+  "command": "/usr/bin/c++    -I/home/roes/桌面/mprpc/src/include -I/home/roes/桌面/mprpc/example  -g   -std=gnu++11 -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -c /home/roes/桌面/mprpc/src/rpcheader.pb.cc",
+  "file": "/home/roes/桌面/mprpc/src/rpcheader.pb.cc"
+},
+{
+  "directory": "/home/roes/桌面/mprpc/build/src",
+  "command": "/usr/bin/c++    -I/home/roes/桌面/mprpc/src/include -I/home/roes/桌面/mprpc/example  -g   -std=gnu++11 -o CMakeFiles/mprpc.dir/logger.cc.o -c /home/roes/桌面/mprpc/src/logger.cc",
+  "file": "/home/roes/桌面/mprpc/src/logger.cc"
+},
+{
+  "directory": "/home/roes/桌面/mprpc/build/src",
+  "command": "/usr/bin/c++    -I/home/roes/桌面/mprpc/src/include -I/home/roes/桌面/mprpc/example  -g   -std=gnu++11 -o CMakeFiles/mprpc.dir/zookeeperutil.cc.o -c /home/roes/桌面/mprpc/src/zookeeperutil.cc",
+  "file": "/home/roes/桌面/mprpc/src/zookeeperutil.cc"
+},
+{
+  "directory": "/home/roes/桌面/mprpc/build/src",
+  "command": "/usr/bin/c++    -I/home/roes/桌面/mprpc/src/include -I/home/roes/桌面/mprpc/example  -g   -std=gnu++11 -o CMakeFiles/mprpc.dir/mprpcchannel.cc.o -c /home/roes/桌面/mprpc/src/mprpcchannel.cc",
+  "file": "/home/roes/桌面/mprpc/src/mprpcchannel.cc"
+},
+{
+  "directory": "/home/roes/桌面/mprpc/build/src",
+  "command": "/usr/bin/c++    -I/home/roes/桌面/mprpc/src/include -I/home/roes/桌面/mprpc/example  -g   -std=gnu++11 -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /home/roes/桌面/mprpc/src/mprpcapplication.cc",
+  "file": "/home/roes/桌面/mprpc/src/mprpcapplication.cc"
+},
+{
+  "directory": "/home/roes/桌面/mprpc/build/example/callee",
+  "command": "/usr/bin/c++    -I/home/roes/桌面/mprpc/src/include -I/home/roes/桌面/mprpc/example  -g   -std=gnu++11 -o CMakeFiles/provider.dir/friendservice.cc.o -c /home/roes/桌面/mprpc/example/callee/friendservice.cc",
+  "file": "/home/roes/桌面/mprpc/example/callee/friendservice.cc"
+},
+{
+  "directory": "/home/roes/桌面/mprpc/build/example/callee",
+  "command": "/usr/bin/c++    -I/home/roes/桌面/mprpc/src/include -I/home/roes/桌面/mprpc/example  -g   -std=gnu++11 -o CMakeFiles/provider.dir/__/friend.pb.cc.o -c /home/roes/桌面/mprpc/example/friend.pb.cc",
+  "file": "/home/roes/桌面/mprpc/example/friend.pb.cc"
+},
+{
+  "directory": "/home/roes/桌面/mprpc/build/example/caller",
+  "command": "/usr/bin/c++    -I/home/roes/桌面/mprpc/src/include -I/home/roes/桌面/mprpc/example  -g   -std=gnu++11 -o CMakeFiles/consumer.dir/callfriendservice.cc.o -c /home/roes/桌面/mprpc/example/caller/callfriendservice.cc",
+  "file": "/home/roes/桌面/mprpc/example/caller/callfriendservice.cc"
+},
+{
+  "directory": "/home/roes/桌面/mprpc/build/example/caller",
+  "command": "/usr/bin/c++    -I/home/roes/桌面/mprpc/src/include -I/home/roes/桌面/mprpc/example  -g   -std=gnu++11 -o CMakeFiles/consumer.dir/__/friend.pb.cc.o -c /home/roes/桌面/mprpc/example/friend.pb.cc",
+  "file": "/home/roes/桌面/mprpc/example/friend.pb.cc"
+}
+]

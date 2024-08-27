@@ -1,0 +1,47 @@
+syntax = "proto3";//设置protobuf版本
+ 
+//声明代码所在包，相当于C++的namespace，在引入由这份文件生成的.cc文件和.h文件时，
+//需要using namespace fixbug
+package fixbug;
+
+//表示生成service服务类
+option cc_generic_services = true;
+
+message ResultCode
+{
+    int32 errcode=1;
+    bytes errmsg=2;
+} 
+
+//定义登录请求
+message LoginRequest
+{
+    bytes name = 1;//表示第1字段
+    bytes pwd = 2;//表示第2字段
+}
+ 
+//定义响应登录请求
+message LoginResponse
+{
+    ResultCode result=1;
+    bool success=2;
+}
+
+message RegisterRequest
+{
+    uint32 id=1;
+    bytes name=2;
+    bytes pwd=3;
+}
+
+message RegisterResponse
+{
+    ResultCode result=1;
+    bool success=2;
+}
+
+service UserServiceRpc
+{
+    rpc Login(LoginRequest) returns(LoginResponse);
+    rpc Register(RegisterRequest) returns(RegisterResponse);
+}

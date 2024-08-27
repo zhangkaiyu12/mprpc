@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+//声明代码所在包，相当于C++的namespace，在引入由这份文件生成的.cc文件和.h文件时，
+//需要using namespace fixbug
+package fixbug;
+
+//表示生成service服务类
+option cc_generic_services = true;
+
+message ResultCode
+{
+    int32 errcode=1;
+    bytes errmsg=2;
+} 
+
+//定义登录请求
+message GetFriendListRequest
+{
+    uint32 userid=1;
+}
+ 
+//定义响应登录请求
+message GetFriendListResponse
+{
+    ResultCode result=1;
+    repeated bytes friends=2;
+}
+
+//
+service FriendServiceRpc
+{
+    rpc GetFriendList(GetFriendListRequest) returns(GetFriendListResponse);
+}
